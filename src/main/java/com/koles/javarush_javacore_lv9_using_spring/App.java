@@ -8,7 +8,9 @@ public class App
         ClassPathXmlApplicationContext context = 
                 new ClassPathXmlApplicationContext("applicationContext.xml");
         
-        Tasks solution = context.getBean("adaptingMultiplyInterfaces", Tasks.class);
+        Tasks solution = context.getBean("fixingAdapter", Tasks.class);
+        
+        context.close();
     }
     
 }

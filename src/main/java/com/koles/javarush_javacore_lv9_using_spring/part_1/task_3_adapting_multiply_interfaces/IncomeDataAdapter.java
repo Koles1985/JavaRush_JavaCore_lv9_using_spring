@@ -29,24 +29,32 @@ public class IncomeDataAdapter implements Customer, Contact{
 
     @Override
     public String getCountryName() {
-        return this.incomeData.getCountryCode();
+        String country = Solution.countries.get(
+                this.incomeData.getCountryCode());
+        return country;
     }
 
     @Override
     public String getName() {
         StringBuilder nameBuilder = new StringBuilder();
         nameBuilder.append(this.incomeData.getContactLastName());
-        nameBuilder.append(" ");
+        nameBuilder.append(", ");
         nameBuilder.append(this.incomeData.getContactFirstName());
         return nameBuilder.toString();
     }
 
     @Override
     public String getPhoneNumber() {
-        int phoneNum = this.incomeData.getPhoneNumber();
+        String phoneNum = String.format("%d", 
+                this.incomeData.getPhoneNumber());
         int phoneCode = this.incomeData.getCountryPhoneCode();
-        String phoneNumber = String.format("%d%d", phoneCode, phoneNum);
-        return phoneNumber;
+        
+        String fullNumber = String.format("+%d(%s)%s - %s - %s",
+                phoneCode, phoneNum.substring(0, 3),
+                phoneNum.substring(3, 6), 
+                phoneNum.substring(6, 8),
+                phoneNum.substring(8, 10));
+        return fullNumber;
     }
     
     
