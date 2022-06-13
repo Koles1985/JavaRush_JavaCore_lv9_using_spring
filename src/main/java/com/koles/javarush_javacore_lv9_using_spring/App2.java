@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.koles.javarush_javacore_lv9_using_spring;
 
 import com.koles.javarush_javacore_lv9_using_spring.config_classes.AnotationSpringConfig;
@@ -17,7 +13,7 @@ public class App2 {
                 new AnnotationConfigApplicationContext(
                         AnotationSpringConfig.class);
         
-        Tasks solution = context.getBean("countingWord", 
+        Tasks solution = context.getBean("selectNumbers", 
                 Tasks.class);
         
         

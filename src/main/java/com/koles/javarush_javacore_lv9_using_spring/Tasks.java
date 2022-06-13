@@ -10,4 +10,8 @@ package com.koles.javarush_javacore_lv9_using_spring;
  */
 public interface Tasks {
     
+    default void print(){
+        System.out.println("This is default method from Tasks interface");
+    }
+    
 }
