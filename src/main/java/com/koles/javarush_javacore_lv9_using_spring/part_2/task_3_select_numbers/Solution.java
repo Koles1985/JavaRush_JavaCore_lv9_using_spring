@@ -1,15 +1,11 @@
 package com.koles.javarush_javacore_lv9_using_spring.part_2.task_3_select_numbers;
 
 import com.koles.javarush_javacore_lv9_using_spring.Tasks;
-import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;

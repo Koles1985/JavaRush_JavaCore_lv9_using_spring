@@ -13,7 +13,7 @@ public class App2 {
                 new AnnotationConfigApplicationContext(
                         AnotationSpringConfig.class);
         
-        Tasks solution = context.getBean("selectNumbers", 
+        Tasks solution = context.getBean("punctuation", 
                 Tasks.class);
         
         
