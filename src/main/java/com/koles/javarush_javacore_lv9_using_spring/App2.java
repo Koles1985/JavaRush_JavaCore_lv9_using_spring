@@ -13,7 +13,7 @@ public class App2 {
                 new AnnotationConfigApplicationContext(
                         AnotationSpringConfig.class);
         
-        Tasks solution = context.getBean("punctuation", 
+        Tasks solution = context.getBean("readerWrap2", 
                 Tasks.class);
         
         
